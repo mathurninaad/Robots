@@ -1,0 +1,82 @@
+/* Import Google Fonts - Monoton for headings, Roboto for body text */
+/* These are already linked in your HTML, so we just reference them here. */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for the body */
+    background: linear-gradient to bottom right, #f0f4f8, #c8d9e9; /* Soft gradient background */
+    color: #333; /* Darker text for readability */
+    margin: 0;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    overflow: auto; /* Allow scrolling if content is too tall */
+    padding: 20px; /* Padding around the container */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the main content area */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit content width */
+    width: 100%; /* Make it responsive */
+    padding: 30px 40px; /* Generous padding inside the container */
+    text-align: center; /* Center align text within the container */
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 30px; /* Space below the header */
+}
+
+header h1 {
+    font-family: 'Monoton', cursive; /* Distinct font for the main heading */
+    font-size: 3.5em; /* Large heading size */
+    color: #4CAF50; /* A vibrant green color */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+    margin: 0;
+    letter-spacing: 5px; /* Spread letters out for style */
+    word-wrap: break-word; /* Ensure long words wrap */
+}
+
+.content p {
+    font-size: 1.2em; /* Slightly larger text for the paragraph */
+    line-height: 1.6; /* Good line spacing for readability */
+    color: #555; /* A bit lighter than body text */
+    margin-bottom: 40px; /* Space below the paragraph */
+    word-wrap: break-word; /* Ensure long words wrap */
+}
+
+footer {
+    height: 20px; /* A small footer for visual balance */
+    /* You could add content here if needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Smaller heading on smaller screens */
+        letter-spacing: 3px;
+    }
+
+    .container {
+        padding: 20px 25px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Add some margin around the container */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em; /* Even smaller heading on very small screens */
+        letter-spacing: 2px;
+    }
+
+    .content p {
+        font-size: 1em; /* Standard font size on very small screens */
+    }
+
+    body {
+        padding: 10px; /* Less padding on very small screens */
+    }
+}
